@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Gene Pattern Notebook &#8211; GenePattern Notebook</title>
+    <link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+    <link rel='dns-prefetch' href='//s.w.org' /> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel='stylesheet' id='font-awesome-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=4.7.4' type='text/css' media='all' />
+    <!-- IE6-10 -->
+    <link rel="shortcut icon" href="wp-content/uploads/2017/02/favicon.ico">
+    <!-- Everybody else -->
+    <link rel="icon" href="wp-content/uploads/2017/02/favicon.ico">
+    <script type='text/javascript'>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction2() {
+        document.getElementById("myDropdown2").classList.toggle("show");
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown2");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+      }
+    }
+    </script>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106705148-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-106705148-1');
+    </script>
+    <link rel="stylesheet" href="wp-content/themes/genepattern/dropdown.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="wp-content/themes/genepattern/style.css" type="text/css" media="screen" />
+</head>
+    
+<body class="home page-template-default page page-id-2">
+    <div id="wrapper">
+        <header id="header">
+            <div class="container cf">
+                <a href="#" id="logo"><img src="/wp-content/themes/genepattern/images/logo.png" alt="Gene Pattern Notebook" /></a>
+                <nav>
+                    <a href="#" id="mobile-menu"><i class="fa fa-bars"></i></a>
+                    <ul id="menu-main-menu" class="menu">
+                        <li id="menu-item-18" class="menu-item"><a href="/quickstart">Quickstart</a></li>
+                        <li id="menu-item-18" class="menu-item"><a href="https://gpnotebook-website-docs.readthedocs.io/en/latest">Documentation</a></li>
+                        <li id="menu-item-17" class="menu-item"><a href="/community">Ecosystem</a></li>
+                        <li id="menu-item-17" class="menu-item"><a href="/notebook-library">Notebook Library</a></li>
+                        <li id="menu-item-17" class="menu-item"><a href="/blog/public/">News</a></li>
+                        <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><a href="/contact/">Contact</a></li>
+                        <li id="menu-item-51" class="button" style="font-weight: 100"><a href="https://notebook.genepattern.org/hub/login">Login/Register</a></li>
+                    </ul>			
+                </nav>
+            </div>
+        </header>
+        <div id="banner">
+            <div id="banner-content" style="margin: 0 auto;">
+                <h1 id="front-title1" style="padding: 25px 0px; font-weight: 600; font-family:Arial, Helvetica, sans-serif">GenePattern<b style="color:rgb(180, 180, 180);">Notebook</b></h1>
+
+                <h1 id="front-title2">Integrating <a href="http://genepattern.org"><img src="/wp-content/uploads/2017/02/genepattern.png?x=1" width="40px" style="vertical-align:middle;"><b> GenePattern</b></a> Genomic Analyses with the <a href="https://jupyter.org">
+                    <img src="/wp-content/uploads/2017/02/jupyter-white.png" width="60px" style="vertical-align:middle;">
+                    <b>Jupyter</b></a> Notebook Environment</h1>
+
+                <!-- <h1 id="front-title1">Integrating <a href="http://genepattern.org">
+                    <img src="/wp-content/uploads/2017/02/genepattern.png" width="40px" style="vertical-align: top;">
+                    <b>GenePattern</b></a> Genomic Analyses</h1>
+                <h1 id="front-title2">with the <a href="https://jupyter.org">
+                    <img src="/wp-content/uploads/2017/02/jupyter-white.png" width="60px" style="vertical-align:middle;">
+                     <b>Jupyter</b></a> Notebook Environment</h1> -->
+                
+                <!-- <div id="front-buttons" style="text-align: center; margin: 0px auto;" class="row">
+                    <div class="col-sm-2"></div>
+                    <a href="/quickstart" class="button col-sm-2" style="margin-right: 10px;">Quickstart</a>
+                    <a href="https://notebook.genepattern.org/hub/login" class="button col-sm-4" id="center-button">Use GenePattern Notebook</a>
+                    <a href="#intros" class="button col-sm-2" style="margin-left: 10px;">Documentation</a>
+                    <div class="col-sm-2"></div>
+                </div> -->
+                <!-- <div>
+                    <a id="learn-more" href="#intros" style="font-size:20px; margin: 0 auto; margin-top: 200px !important;">
+                        <br style="">
+                        Learn More<br>
+                        <span class="glyphicon glyphicon-chevron-down" style="font-size: 30px;"></span>
+                    </a>
+                </div> -->
+                
+                <!--
+                <div id="pub" style="font-size: 18px; margin-top: 5%">
+                    <p style="color:white; font-size: 20px; letter-spacing: 2px; margin-bottom: 20px;">HOW TO CITE:</p>
+                    <p style="color:white; margin-bottom: 0px">Cell Systems</p>  
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5572818/" style="color: #ACC6EF; margin-top: 0px">Reich et al. The GenePattern Notebook Environment. Cell Systems. 2017(5):149-51</a>
+                </div>
+                <div id="news" style="font-size: 18px;">
+                    <p style="color:white; font-size: 20px; letter-spacing: 2px; margin-bottom: 4%;">IN THE PRESS:</p>
+                    <div id="news-img" style="margin-left: 5%; text-align: center">
+                        <a href="https://blogs.nature.com/naturejobs/2017/09/15/techblog-jupyter-powers-bioinformatics-again"><img src="wp-content/uploads/2017/02/naturejobs.png"></a>
+                        <a href="https://www.bio-itworld.com/2017/08/31/genepattern-notebook-environment-needs-only-web-browser-analyses.aspx"><img src="wp-content/uploads/2017/02/bioit.png" ></a>
+                        <a href="https://www.genomeweb.com/informatics/broads-genepattern-now-has-notebook-aggregation-collaboration-features"><img src="wp-content/uploads/2017/02/genomeweb.png"></a>
+                    </div>
+                    <p style="color:white; margin-bottom: 0px">Nature Blog</p>  
+                    <a href="https://blogs.nature.com/naturejobs/2017/09/15/techblog-jupyter-powers-bioinformatics-again" style="color: #ACC6EF; ">"TechBlog: Jupyter powers bioinformatics, again"</a>
+                    <p style="color:white; margin-bottom: 0px; margin-top: 10px">BioIT World</p>  
+                    <a href="https://www.bio-itworld.com/2017/08/31/genepattern-notebook-environment-needs-only-web-browser-analyses.aspx" style="color: #ACC6EF; ">"GenePattern Notebook Environment Needs Only A Web Browser To Run Analyses"</a>
+                    <p style="color:white; margin-bottom: 0px; margin-top: 10px">GenomeWeb</p>  
+                    <a href="https://www.genomeweb.com/informatics/broads-genepattern-now-has-notebook-aggregation-collaboration-features" style="color: #ACC6EF;">"Broad's GenePattern Now Has 'Notebook' Aggregation, Collaboration Features"</a>
+                    
+                </div> -->
+            </div>
+        </div>
+        <div id="intros" class="container-fluid" style="text-align: center;">
+            <div class="container-fluid row" style="margin: auto;">
+                <div class="col-sm-4 info-block">
+                    <div style="width: 100%; margin:auto;" class="inner row">
+                        <h2>Getting Started</h2>
+                        <p>Learn GenePattern Notebook </p>
+                        <ul class="detail col-lg-12">
+                            <li><a href="user-guide/">Quickstart</a></li>
+                            <li><a href="basic-features/">Basic Features</a></li>
+                            <li><a href="tutorials/">Tutorial Videos</a></li>
+                            <li><a href="https://gpnotebook-website-docs.readthedocs.io/en/latest/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <p class="more" style="width: 95%"><a href="user-guide/" class="button">Quick Start</a></p>
+                </div>
+                <div class="col-sm-4 info-block">
+                    <div style="width: 100%; margin:auto;" class="inner row">
+                        <h2>Use GenePattern Notebook</h2>
+                        <p>Access through our dedicated servers or locally</p>
+                        <ul class="detail col-lg-6">
+                            <li><a href="https://notebooks.genepattern.org/hub/login">Login/Register</a></li>
+                            <li><a href="notebook-library/">Notebook Library</a></li>
+                            <li><a>Local Installation</a></li>
+                        </ul>  
+                        <ul class="detail col-lg-6">
+                            <li><a></a></li>
+
+                        </ul>
+                    </div>
+                    <p class="more" style="width: 95%"><a href="https://notebook.genepattern.org/hub/login" class="button">Login/Register</a></p>
+                </div>
+                <div class="col-sm-4 info-block">
+                    <div style="width: 100%; margin:auto;" class="inner row">
+                        <h2>Develop</h2>
+                        <p>Join our bioinformatics notebook community</p>
+                        <ul class="detail col-lg-6">
+                            <li><a href="/sphinx/build/html/">Documentation</a></li>
+                            <li><a>Programmatic Features</a></li>
+                        </ul>
+                        <ul class="detail col-lg-6">
+                            <li><a href="https://github.com/genepattern/genepattern-notebook">Github Page</a></li>
+                            <li><a>Best Practices</a></li>
+                        </ul>
+                    </div>
+                    <p class="more" style="width: 95%"><a href="/sphinx/build/html/" class="button">Documentation</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="newsfront" style="text-align: left; padding: 60px 50px; margin: auto;">
+            <div style="background: white;">
+                <h2>In the News:</h2>
+                <a href="https://blogs.nature.com/naturejobs/2017/09/15/techblog-jupyter-powers-bioinformatics-again"><img
+                        src="wp-content/uploads/2017/02/naturejobs.png"></a>
+                <a
+                    href="https://www.bio-itworld.com/2017/08/31/genepattern-notebook-environment-needs-only-web-browser-analyses.aspx"><img
+                        src="wp-content/uploads/2017/02/bioit.png"></a>
+                <a
+                    href="https://www.genomeweb.com/informatics/broads-genepattern-now-has-notebook-aggregation-collaboration-features"><img
+                        src="wp-content/uploads/2017/02/genomeweb.png"></a><br>
+                <a href="https://blogs.nature.com/naturejobs/2017/09/15/techblog-jupyter-powers-bioinformatics-again">"TechBlog: Jupyter powers bioinformatics, again"</a><br>
+                <a href="https://www.bio-itworld.com/2017/08/31/genepattern-notebook-environment-needs-only-web-browser-analyses.aspx">"GenePattern Notebook Environment Needs Only A Web Browser To Run Analyses"</a><br>
+                <a href="https://www.genomeweb.com/informatics/broads-genepattern-now-has-notebook-aggregation-collaboration-features">"Broad's GenePattern Now Has 'Notebook' Aggregation, Collaboration Features"</a>
+            </div>
+            <div style="background: white; margin-top: 20px;">
+                <h2>How to Cite:</h2>
+                <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5572818/" style="margin-top: 0px">Reich et al. The
+                    GenePattern Notebook Environment. Cell Systems. 2017(5):149-51</a>
+            </div>
+        </div>
+        <div id="welcome">
+            <div class="container" style="text-align: center;">
+                <h1 style="color: white; font-size: 1.5em;">Introduction to the GenePattern Notebook Environment</h1>
+                <iframe width="80%" height="530px" src="https://www.youtube.com/embed/8npzyGLpUHU" frameborder="0" allowfullscreen align="center"></iframe>
+            </div>
+        </div>
+
+        <footer id="footer">
+                <div class="container">
+                        <p>GenePattern Notebook usage is free and the software is open source under a BSD-style license.</p>
+                        <p>© 2019 Regents of the University of California and the Broad Institute. </p>
+                </div>
+        </footer>
+    </div>
+    <script type='text/javascript' src='wp-includes/js/wp-embed.min.js?ver=4.7.4'></script>
+    <script type='text/javascript' src='wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+    <script type='text/javascript' src='wp-content/themes/genepattern/js/onepagenav.js?ver=4.7.4'></script>
+    <script type='text/javascript' src='wp-content/themes/genepattern/js/stickykit.js?ver=4.7.4'></script>
+    <script type='text/javascript' src='wp-content/themes/genepattern/js/scripts.js?ver=4.7.4'></script>
+    <link rel='https://api.w.org/' href='wp-json/' />
+
+</body>
+</html>
+
